@@ -1,0 +1,127 @@
+.task-list {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #111;
+  padding: 20px;
+}
+
+.task-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-list-header h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.task-list-header button {
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-list-header button:hover {
+  background-color: #005ea8;
+}
+
+.task {
+  margin-bottom: 20px;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-input input {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.task-input input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0077cc;
+}
+
+.task-buttons button {
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-buttons button:hover {
+  background-color: #005ea8;
+}
+
+.add-subtask-button {
+  font-size: 24px;
+  margin-right: 10px;
+  background-color: #0077cc;
+}
+
+.remove-task-button {
+  font-size: 24px;
+  background-color: #0077cc;
+}
+
+.subtask {
+  margin-bottom: 10px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.subtask input {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.subtask input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0077cc;
+}
+
+.subtask-buttons button {
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subtask-buttons button:hover {
+  background-color: #005ea8;
+}
+
+.remove-subtask-button {
+  font-size: 24px;
+  background-color: #0077cc;
+}
