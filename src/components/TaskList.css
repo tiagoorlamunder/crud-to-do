@@ -19,18 +19,17 @@
 }
 
 .task-list-header button {
-  border: none;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #ff3d00;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .task-list-header button:hover {
-  background-color: #005ea8;
+  background-color: #e64a19;
 }
 
 .task {
@@ -44,84 +43,116 @@
 }
 
 .task-input input {
-  border: none;
-  background-color: #333;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #222;
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  flex: 1;
+  border: none;
+  flex-grow: 1;
   margin-right: 10px;
 }
 
 .task-input input:focus {
   outline: none;
-  box-shadow: 0 0 5px #0077cc;
+  box-shadow: 0 0 0 2px #ff3d00;
 }
 
-.task-buttons button {
+.task-separator {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.task-separator hr {
   border: none;
-  background-color: #0077cc;
+  border-top: 1px dashed #444;
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.task-buttons button:hover {
-  background-color: #005ea8;
-}
-
-.add-subtask-button {
-  font-size: 24px;
-  margin-right: 10px;
-  background-color: #0077cc;
-}
-
-.remove-task-button {
-  font-size: 24px;
-  background-color: #0077cc;
+  width: 70%;
 }
 
 .subtask {
-  margin-bottom: 10px;
-  margin-left: 40px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .subtask input {
-  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
   background-color: #333;
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  flex: 1;
+  border: none;
+  flex-grow: 1;
   margin-right: 10px;
 }
 
 .subtask input:focus {
   outline: none;
-  box-shadow: 0 0 5px #0077cc;
+  box-shadow: 0 0 0 2px #ff3d00;
 }
 
-.subtask-buttons button {
+.task-buttons,
+.subtask-buttons {
+  display: flex;
+}
+
+.add-subtask-button,
+.add-subtask-button:hover,
+.remove-task-button,
+.remove-task-button:hover,
+.remove-subtask-button,
+.remove-subtask-button:hover,
+.add-subtask-button:focus,
+.remove-task-button:focus,
+.remove-subtask-button:focus {
+  background-color: transparent;
   border: none;
-  background-color: #0077cc;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.subtask-buttons button:hover {
-  background-color: #005ea8;
+.add-subtask-button:hover,
+.remove-task-button:hover,
+.remove-subtask-button:hover,
+.add-subtask-button:focus,
+.remove-task-button:focus,
+.remove-subtask-button:focus {
+  color: #ff3d00;
 }
 
-.remove-subtask-button {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.calendar-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 2;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container h3 {
   font-size: 24px;
-  background-color: #0077cc;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
