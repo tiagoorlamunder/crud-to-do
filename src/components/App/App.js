@@ -1,5 +1,5 @@
 import React from 'react';
-import TaskList from './TaskList.js';
+import TaskList from '../TaskList/TaskList.js';
 import './App.css';
 
 function App() {
